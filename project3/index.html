@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            width: 200px;
+            background: rgb(115, 209, 8);
+            border-radius: 50%;
+            cursor: pointer;
+            transition: cubic-bezier(0.075, 0.82, 0.165, 1) 3s;
+        }
+        div:hover{
+            transform: scale(2);
+        }
+        /* .hover{
+            transform: scale(2);
+        } */
+    </style>
+</head>
+<body>
+    <div id="hover"><h2>Hover</h2></div>
+    <script src="app.js"></script>
+</body>
+</html>

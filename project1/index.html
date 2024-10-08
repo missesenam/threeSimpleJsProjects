@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>emojis</title>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+            padding: 0;
+        }
+        body{
+            display: flex;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+        }
+        img{
+            cursor: pointer;
+            user-select: none;
+        }
+        .smilling{
+            display: block;
+        }
+        .angry{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="./happy-emoji-svgrepo-com.svg" alt="" width="100px" onclick="changeangry()" class="smilling">
+        <!-- <img src="./pouting-face-svgrepo-com.svg" alt="" width="100px" onclick="changehappy()" class="angry"> -->
+    </div>
+    <script>
+        let img = document.getElementsByTagName('img')
+
+        // includes
+        function changeangry(){
+            if(img[0].src.includes('happy-emoji-svgrepo-com.svg')){
+                img[0].src = 'pouting-face-svgrepo-com.svg'
+            }else if(img[0].src.includes('pouting-face-svgrepo-com.svg')){
+                img[0].src = 'happy-emoji-svgrepo-com.svg'
+            }
+        }
+        
+        // function changeangry(){
+        //     if (img[0].classList.contains('smilling')){
+        //         img[0].classList.add('angry')
+        //         img[1].classList.add('smilling')
+        //         img[1].classList.remove('angry')
+        //     } 
+        // }
+        // function changehappy(){
+        //     if (img[1].classList.contains('smilling')){
+        //         img[1].classList.add('angry')
+        //         img[0].classList.add('smilling')
+        //         img[0].classList.remove('angry')
+        //     }
+        // }
+    </script>
+</body>
+</html>

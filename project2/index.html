@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #books{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 10px;
+            padding-top: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        #books div{
+            /* border: 1px solid black; */
+            border-radius: 10px;
+            padding: 5px;
+            background: rgb(201, 224, 245);
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        #books div h1 span{
+            color: rgb(24, 137, 243);
+        }
+        #books div h2 span{
+            color: rgb(90, 169, 243);
+        }
+    </style>
+</head>
+<body>
+    <h1>The best selling books</h1>
+    <div id="books"></div>
+    <script src="script.js"></script>
+</body>
+</html>
