@@ -13,7 +13,6 @@
             height: 100vh;
             display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
         }
         #books{
@@ -39,6 +38,11 @@
         }
         #books div h2 span{
             color: rgb(90, 169, 243);
+        }
+        @media (min-width: 500px) {
+            #books{
+            grid-template-columns: repeat(2,1fr);
+        }
         }
     </style>
 </head>
