@@ -31,34 +31,34 @@
 <body>
     <div>
         <img src="./happy-emoji-svgrepo-com.svg" alt="" width="100px" onclick="changeangry()" class="smilling">
-        <!-- <img src="./pouting-face-svgrepo-com.svg" alt="" width="100px" onclick="changehappy()" class="angry"> -->
+        <img src="./pouting-face-svgrepo-com.svg" alt="" width="100px" onclick="changehappy()" class="angry">
     </div>
     <script>
         let img = document.getElementsByTagName('img')
 
         // includes
-        function changeangry(){
-            if(img[0].src.includes('happy-emoji-svgrepo-com.svg')){
-                img[0].src = 'pouting-face-svgrepo-com.svg'
-            }else if(img[0].src.includes('pouting-face-svgrepo-com.svg')){
-                img[0].src = 'happy-emoji-svgrepo-com.svg'
-            }
-        }
-        
         // function changeangry(){
-        //     if (img[0].classList.contains('smilling')){
-        //         img[0].classList.add('angry')
-        //         img[1].classList.add('smilling')
-        //         img[1].classList.remove('angry')
-        //     } 
-        // }
-        // function changehappy(){
-        //     if (img[1].classList.contains('smilling')){
-        //         img[1].classList.add('angry')
-        //         img[0].classList.add('smilling')
-        //         img[0].classList.remove('angry')
+        //     if(img[0].src.includes('happy-emoji-svgrepo-com.svg')){
+        //         img[0].src = 'pouting-face-svgrepo-com.svg'
+        //     }else if(img[0].src.includes('pouting-face-svgrepo-com.svg')){
+        //         img[0].src = 'happy-emoji-svgrepo-com.svg'
         //     }
         // }
+        
+        function changeangry(){
+            if (img[0].classList.contains('smilling')){
+                img[0].classList.add('angry')
+                img[1].classList.add('smilling')
+                img[1].classList.remove('angry')
+            } 
+        }
+        function changehappy(){
+            if (img[1].classList.contains('smilling')){
+                img[1].classList.add('angry')
+                img[0].classList.add('smilling')
+                img[0].classList.remove('angry')
+            }
+        }
     </script>
 </body>
 </html>
